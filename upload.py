@@ -51,20 +51,30 @@ def hfhub_download(model_info, download_dir, hf_token, max_connections):
     siblings = model_info[siblings_idx]
     siblings = eval(siblings)
 
-    
+
     def download_from_repo(repo_id, sib):
         file = sib.rfilename
         hf_hub_download(repo_id, file, resume_download=True, local_dir=download_dir, local_dir_use_symlinks=False, token=hf_token)
+
     
-    try:
+    with ThreadPoolExecutor(max_workers=max_connections) as pool:
         handles = []
-        with ThreadPoolExecutor(max_workers=max_connections) as pool:
-            for sib in siblings:
-                handles.append(pool.submit(download_from_repo, repo_id, sib))
-    except KeyboardInterrupt:
-        print("Ctrl-C")
-        # for h in handles:
-        #     h.cancel()
+        # with ThreadPoolExecutor(max_workers=max_connections) as pool:
+        for sib in siblings:
+            handles.append(pool.submit(download_from_repo, repo_id, sib))
+        while len(handles) > 0:
+            finished = []
+            for h in handles:
+                if h.running():
+                    try:
+                        None
+                    except KeyboardInterrupt:
+                        print("Ctrl-C")
+                        pool.shutdown(wait=False, cancel_futures=True)
+                else:
+                    finished.append(h)
+            for f in finished:
+                handles.remove(f)
 
     return
 
@@ -206,13 +216,12 @@ def test_load(root_dir: str,
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--root_dir")
-    parser.add_argument("--csv_file")
-    parser.add_argument("--cache_dir")
-    parser.add_argument("--log_dir")
-    parser.add_argument("--hf_username")
-    parser.add_argument("--hf_token")
-    parser.add_argument("--max_connections", type=int)
+    parser.add_argument("--root_dir", required=True)
+    parser.add_argument("--csv_file", required=True)
+    parser.add_argument("--cache_dir", required=True)
+    parser.add_argument("--hf_username", required=True)
+    parser.add_argument("--hf_token", required=True)
+    parser.add_argument("--max_connections", type=int, required=True)
     parser.add_argument("--backend", choices=["torch", "tf", "sklearn"])
     args = parser.parse_args()
     
@@ -221,11 +230,11 @@ if __name__ == "__main__":
         next(reader)
         for row in reader:
             repo_download_and_upload(root_dir=args.root_dir,
-                        model_info=row,
-                        cache_dir=args.cache_dir,
-                        hf_username=args.hf_username,
-                        hf_token=args.hf_token,
-                        max_connections=args.max_connections)
+                                    model_info=row,
+                                    cache_dir=args.cache_dir,
+                                    hf_username=args.hf_username,
+                                    hf_token=args.hf_token,
+                                    max_connections=args.max_connections)
             
             # repo_id = row[0]
             # test_load(root_dir=args.root_dir,

@@ -1,77 +1,46 @@
-# 400 models
+# Mission
 
-Huggingface repo. Fetch top-liked models for each task.
-
-- NLP: 170
-- Audio: 60
-- Vision: 147
-- Multi-modal: 25
-- Sklearn: 3
+运行脚本,将列表中的模型下载并加载到模型仓库中.
 
 
-## NLP
+# Dependencies (***不要使用代理***)
 
-1. text-generation: 20
-2. question-answering: 20
-3. text-classification: 20
-4. translation: 20
-5. summarization: 20
-6. token-classification: 10
-7. zero-shot-classification: 10
-8. feature-extraction: 10
-9.  text2text-generation: 10
-10. fill-mask: 10
-11. sentence-similarity: 10
-12. table-question-answering: 10
+Conda:
 
+```bash
+conda create -n modelrepo python==3.10 -y
+conda activate modelrepo
+pip install modelstore transformers torch tensorflow tf-keras scikit-learn tqdm tensorflow_probability
+```
 
-## Audio
+Venv (Bash, python 3.10):
+```bash
+python -m venv modelrepo
+source modelrepo/bin/activate
+pip install modelstore transformers torch tensorflow tf-keras scikit-learn tqdm tensorflow_probability
+```
 
-1. text-to-speech: 10
-2. text-to-audio: 10
-3. automatic-speech-recognition: 10
-4. audio-to-audio: 10
-5. audio-classification: 10
-6. voice-activity-detection: 10
+Venv (Powershell, python 3.10):
+```powershell
+python -m venv modelrepo
+modelrepo\Scripts\activate.ps1
+pip install modelstore transformers torch tensorflow tf-keras scikit-learn tqdm tensorflow_probability
+```
 
+# How to run
 
-## Vision
+1. `upload.sh`(Bash) / `upload.ps1`(Powershell). 修改:
+    - `CSV_FILE`: 模型列表文件.
+    - `ROOT_DIR`: 模型仓库根目录.
+2. 运行脚本.
+    - Powershell: `.\upload.ps1`
+    - Bash: `bash upload.sh`
+3. 检查模型是否全部加载到模型仓库中.
 
-1. depth-estimation: 10
-2. image-classification: 10
-3. object-detection: 10
-4. image-segmentation: 10
-5. text-to-image: 10
-6. image-to-text: 10
-7. image-to-image: 10
-8. image-to-video: 10
-9. unconditional-image-generation: 10
-10. video-classification: 10
-11. zero-shot-image-classification: 10
-12. mask-generation: 10
-13. zero-shot-object-detection: 10
-14. image-feature-extraction: 10
-15. image-to-3d: 6
-16. text-to-video: 1
-17. text-to-3d: 0
+    有些模型不能加载到模型仓库中.可能的原因:
+    1. 程序因为网络问题或人为终止而中断.
+    2. 模型仓库不支持该模型.
 
+    可以运行`python test_finished.py --root_dir <ROOT_DIR> --csv_file <CSV_FILE>`检查,输出`todo.csv`文件,其中包含未加载到模型仓库中的模型.该文件可以重新作为步骤(1)的输入.
 
-## Multi-modal
-
-1. image-text-to-text: 5
-2. visual-question-answering: 10
-3. document-question-answering: 10
-
-
-## Sklearn models
-
-
-
-
-# 20 
-
-
-
-# Dependencies
-
-modelstore, transformers, torch, tensorflow, tf-keras, scikit-learn, tqdm, tensorflow_probability.
+    由于第二种原因而未能成功加载的模型可以直接跳过.

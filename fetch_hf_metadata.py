@@ -18,29 +18,29 @@ header = ['id', 'author', 'sha', 'last_modified', 'created_at', 'private', 'gate
 
 
 tasks = {
-    'nlp': {
-        "text-generation": 30,
-        "question-answering": 20,
-        "text-classification": 20,
-        "translation": 20,
-        "summarization": 20,
-        "token-classification": 10,
-        "zero-shot-classification": 10,
-        "feature-extraction": 10,
-        "text2text-generation": 10,
-        "fill-mask": 10,
-        "sentence-similarity": 10,
-        "table-question-answering": 10,
-    },
+    # 'nlp': {
+    #     "text-generation": 50,
+    #     "question-answering": 40,
+    #     "text-classification": 40,
+    #     "translation": 40,
+    #     "summarization": 40,
+    #     "text2text-generation": 40,
+    #     "feature-extraction": 40,
+    #     "zero-shot-classification": 30,
+    #     "token-classification": 10,
+    #     "fill-mask": 10,
+    #     "sentence-similarity": 10,
+    #     "table-question-answering": 10,
+    # },
     'vision': {
-        "depth-estimation": 10,
-        "image-classification": 10,
-        "object-detection": 10,
-        "image-segmentation": 10,
-        "text-to-image": 10,
-        "image-to-text": 10,
-        "image-to-image": 10,
-        "unconditional-image-generation": 10,
+        "depth-estimation": 5,
+        "image-classification": 30,
+        "object-detection": 30,
+        "image-segmentation": 30,
+        "text-to-image": 30,
+        "image-to-text": 30,
+        "image-to-image": 30,
+        "unconditional-image-generation": 30,
         "text-to-video": 1,
         "zero-shot-image-classification": 10,
         "mask-generation": 10,
@@ -74,27 +74,49 @@ def is_backend_valid(tags):
 skipped_files = ["README.md", ".gitattributes"]
 def get_download_size(repo_id, siblings):
     url = f"https://hf-mirror.com/{repo_id}/resolve/main"
-    size = 0
     # siblings = eval(siblings)
-    for sib in siblings:
-        if sib.rfilename in skipped_files:
-            continue
+    from concurrent.futures import ThreadPoolExecutor
+
+    def worker(sib):
         link = f"{url}/{sib.rfilename}"
         r = requests.head(link, headers={"Accept-Encoding": "identity"})
         if r.status_code in (401, 403):
             r = requests.head(link, headers={"Authorization": f"Bearer {HF_TOKEN}", "Accept-Encoding": "identity"})
-        if 'location' in r.headers:
+        if 'x-error-code' in r.headers and r.headers['x-error-code'].lower() == 'gatedrepo':
+            return 0
+        if 'location' not in r.headers:
+            cl = int(r.headers['Content-Length'])
+        else:
             loc = r.headers['location']
-            r = requests.head(loc, headers={"Accept-Encoding": "identity"})
-        cl = int(r.headers['Content-Length'])
+            r_redirect = requests.head(loc, headers={"Accept-Encoding": "identity"})
+            if 'content-length' not in r_redirect.headers:
+                print(link)
+                print(r.headers)
+                print(r_redirect.headers)
+            cl = int(r_redirect.headers['Content-Length'])
         print(link, cl)
-        size += cl
+        return cl
+
+    with ThreadPoolExecutor(16) as pool:
+        handles = []
+        for sib in siblings:
+            if sib.rfilename in skipped_files:
+                continue
+            h = pool.submit(worker, sib)
+            handles.append(h)
+    
+    size = 0
+    for h in handles:
+        if h.done():
+            # print(h.result)
+            size += h.result()
+            
     return size
 
 
-def one_trial(task, criterion, topK, limit):
-    models = list_models(filter=task, sort=criterion, direction=-1, limit=limit)
-    ids = set()
+def one_trial(ids, task, criterion, topK, limit):
+    api = HfApi(endpoint="https://hf-mirror.com")
+    models = api.list_models(filter=task, sort=criterion, direction=-1, limit=limit)
     model_infos = []
 
     for model_info in models:
@@ -111,7 +133,7 @@ def one_trial(task, criterion, topK, limit):
         repo_id = model_info['id']
         siblings = model_info['siblings']
         dl_size = get_download_size(repo_id, siblings)
-        if dl_size < 10000:
+        if dl_size == 0:
             print(f"Auth needed for {repo_id}. Skipped.")
             continue
 
@@ -134,6 +156,7 @@ if __name__ == "__main__":
     metadata_dir = f"metadata/{criterion}"
     os.makedirs(metadata_dir, exist_ok=True)
 
+    repo_ids_all = set()
     for field, task_dict in tasks.items():
         file = os.path.join(metadata_dir, f"{field}.csv")
         with open(file, "w", encoding='utf-8') as fp:
@@ -141,10 +164,10 @@ if __name__ == "__main__":
             writer.writerow(header)
 
             for task, topK in tqdm(task_dict.items(), desc=field):
-                model_infos = one_trial(task, criterion, topK, 2*topK)
+                model_infos = one_trial(repo_ids_all, task, criterion, topK, 2*topK)
                 loop = 2
                 while len(model_infos) < topK:
-                    model_infos = one_trial(task, criterion, topK, topK*(2**(loop)))
+                    model_infos = one_trial(repo_ids_all, task, criterion, topK, topK*(2**(loop)))
                     loop += 1
                     print(task, len(model_infos))
 

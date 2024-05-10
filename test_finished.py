@@ -17,8 +17,8 @@ def model_exists(root_dir: str,
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--root_dir")
-    parser.add_argument("--csv_file")
+    parser.add_argument("--root_dir", required=True)
+    parser.add_argument("--csv_file", required=True)
     args = parser.parse_args()
 
     with open(args.csv_file, "r", encoding='utf-8') as fp, open("todo.csv", "w", encoding='utf-8') as todo_fp:
