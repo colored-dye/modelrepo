@@ -16,6 +16,8 @@ from huggingface_hub import hf_hub_download
 
 import utils
 
+os.environ['NO_PROXY'] = 'hf-mirror.com'
+
 
 from collections import namedtuple
 RepoSibling = namedtuple("RepoSibling", ['rfilename', 'size', 'blob_id', "lfs"])
