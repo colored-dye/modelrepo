@@ -6,7 +6,7 @@ ROOT_DIR="store/"
 CSV_FILE="job.csv"
 BACKEND="torch"
 CACHE_DIR="cache/"
-HF_TOKEN="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"
+HF_TOKEN="hf_xxx"
 MAX_CONNECTIONS="16"
 
 python upload.py \

@@ -17,7 +17,7 @@ HF_TOKEN = os.environ['HF_TOKEN']
 criterion = "likes"
 
 header = ['id', 'author', 'sha', 'last_modified', 'created_at', 'private', 'gated', 'disabled', 'downloads', 'likes', 'library_name', 'tags', 'pipeline_tag', 'mask_token',
-          'card_data', 'widget_data', 'model_index', 'config', 'transformers_info', 'siblings', 'spaces', 'safetensors', 'lastModified', 'cardData', 'transformersInfo', '_id', 'modelId', 'download_size']
+          'card_data', 'widget_data', 'model_index', 'config', 'transformers_info', 'siblings', 'spaces', 'safetensors', 'lastModified', 'cardData', 'transformersInfo', '_id', 'modelId']
 
 
 def is_backend_valid(tags):
@@ -112,31 +112,18 @@ def one_trial(ids, task, criterion, topK, limit):
 
 
 if __name__ == "__main__":
-    with open("tasks.json", "r") as fp:
-        tasks = json.load(fp)
+    with open("tasks_40.json", "r") as fp:
+        repo_ids = json.load(fp)
 
-    total = 0
-    for task in tasks.values():
-        for topK in task.values():
-            total += topK
-    print(f"Total number of models (before deduplicated): {total}")
-
-    metadata_dir = f"metadata/{criterion}"
+    metadata_dir = f"metadata/40/"
     os.makedirs(metadata_dir, exist_ok=True)
 
-    repo_ids_all = set()
-    for field, task_dict in tasks.items():
-        file = os.path.join(metadata_dir, f"{field}.csv")
-        with open(file, "w", encoding='utf-8') as fp:
-            writer = csv.writer(fp, lineterminator='\n')
-            writer.writerow(header)
+    api = HfApi(endpoint="https://hf-mirror.com")
+    with open(os.path.join(metadata_dir, "40.csv"), "w") as fp:
+        writer = csv.writer(fp, lineterminator='\n')
+        writer.writerow(header)
+        for id in repo_ids:
+            model_info = api.model_info(id)
+            model_info = model_info.__dict__
+            writer.writerow(model_info.values())
 
-            for task, topK in tqdm(task_dict.items(), desc=field):
-                model_infos = one_trial(repo_ids_all, task, criterion, topK, 2*topK)
-                loop = 2
-                while len(model_infos) < topK:
-                    model_infos = one_trial(repo_ids_all, task, criterion, topK, topK*(2**(loop)))
-                    loop += 1
-                    print(task, len(model_infos))
-
-                writer.writerows(model_infos)

@@ -1,0 +1,459 @@
+id,author,sha,last_modified,created_at,private,gated,disabled,downloads,likes,library_name,tags,pipeline_tag,mask_token,card_data,widget_data,model_index,config,transformers_info,siblings,spaces,safetensors,lastModified,cardData,transformersInfo,_id,modelId
+microsoft/resnet-34,microsoft,4d180fbdc81b4d5d4eaa86ab89bdd669200dd477,2023-06-26 19:49:23+00:00,2022-03-16 15:41:51+00:00,False,False,False,2275,6,transformers,"['transformers', 'pytorch', 'tf', 'safetensors', 'resnet', 'image-classification', 'vision', 'dataset:imagenet-1k', 'arxiv:1512.03385', 'license:apache-2.0', 'autotrain_compatible', 'endpoints_compatible', 'region:us']",image-classification,,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-1k",,,"{'architectures': ['ResNetForImageClassification'], 'model_type': 'resnet'}","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')","[RepoSibling(rfilename='.gitattributes', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='README.md', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='model.safetensors', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='preprocessor_config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='pytorch_model.bin', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='tf_model.h5', size=None, blob_id=None, lfs=None)]","['Nuno-Tome/simple_image_classifier', 'inoculatemedia/microsoft-resnet-34-image-classification', 'Nymbo/simple_image_classifier']","SafeTensorsInfo(parameters={'F32': 21814696}, total=21814696)",2023-06-26 19:49:23+00:00,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-1k","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')",6232053f86753f5f41d5ce16,microsoft/resnet-34
+microsoft/resnet-50,microsoft,34c2154c194f829b11125337b98c8f5f9965ff19,2024-02-13 21:24:05+00:00,2022-03-16 15:42:43+00:00,False,False,False,799741,232,transformers,"['transformers', 'pytorch', 'tf', 'jax', 'safetensors', 'resnet', 'image-classification', 'vision', 'dataset:imagenet-1k', 'arxiv:1512.03385', 'license:apache-2.0', 'autotrain_compatible', 'endpoints_compatible', 'region:us']",image-classification,,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-1k",,,"{'architectures': ['ResNetForImageClassification'], 'model_type': 'resnet'}","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')","[RepoSibling(rfilename='.gitattributes', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='README.md', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='flax_model.msgpack', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='model.safetensors', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='preprocessor_config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='pytorch_model.bin', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='tf_model.h5', size=None, blob_id=None, lfs=None)]","['Nuno-Tome/simple_image_classifier', 'taquynhnga/CNNs-interpretation-visualization', 'Ramos-Ramos/visual-emb-gam-probing', 'Khaled27/Naptah', 'hysts/space-that-creates-model-demo-space', 'juliensimon/battle_of_image_classifiers', 'davanstrien/arch_demo', 'mixcard/image-2-details', 'Omnibus/AI-or-Not', 'jeffhaines/rice-disease-identifier', 'akhaliq/space-that-creates-model-demo-space', 'peteralexandercharles/space-that-creates-model-demo-space', 'rbarman/resnet50-example', 'lianglv/microsoft-resnet-50', 'realambuj/Image_Classifier_using_RESNET50', 'jonanfu/demo_clase_platzi', 'ludusc/latent-space-theories', 'Waranchari/Image_Classification', 'Charles95/gradio-tasks', 'ADOPLE/Image_Classification', 'zergswim/test', 'kasidith/classification', 'saimandava/microsoft-resnet-50', 'Skakade/microsoft-resnet-50', 'mahakgupta1/microsoft-resnet-50', 'hg2001/microsoft-resnet-50-demo2', 'ntayal/healthy-infected-plant', 'awacke1/Image-Classifier-microsoft-resnet-50', 'SivaResearch/Opensource_imageClassifer_combo', 'Latyrine/microsoft-resnet-50', 'glrh11/image-classification', 'momomuchu/microsoft-resnet-50', 'BubuDavid/image-classification', 'zhongzzz/zzq', 'risekid/imageProcess', 'MokkaAbhishek/microsoft-resnet-50', 'Nirvana-Real/microsoft-resnet-50', 'degaya/microsoft-resnet-50', 'EinfachOlder/space-that-creates-model-demo-space', 'kisn/microsoft-resnet-50', 'takeabilfive/microsoft-resnet-50', 'smerdov/microsoft-resnet-50', 'greenrain0012/microsoft-resnet-50', 'hamlegs/IntelliStyle', 'tellview/microsoft-resnet-50', 'ARUZ/microsoft-resnet-50', 'ABITOS/microsoft-resnet-50', 'zh5259/microsoft-resnet-50', 'threeidots/VTHacksAPP', 'n1thun/microsoft-resnet-50', 'Omnibus/AI-or-Not-dev', 'gkin/microsoft-resnet-50', 'TheKitten/space-that-creates-model-demo-space', 'vkthakur88/microsoft-resnet-50', 'CodeTed/Body_Index_Predictor', 'gkin/microsoft-resnet-50-obj', 'UNIQ-DEV/Image-Classification-Benchmark', 'PlayForLose/Final_Project', 'surya696030/microsoft-resnet-50', 'Tuhinm2002/visionpedia', 'greenarcade/microsoft-resnet-50', 'Nymbo/simple_image_classifier', 'eliasb/microsoft-resnet-50', 'CarolFei/project_dog_emotion_recomandation', 'karoladelk/microsoft-resnet-50', 'ganeshkamath89/gradio-huggingface-pipeline-tasks-demo-all', 'Saad0KH/body_predictor']","SafeTensorsInfo(parameters={'F32': 25610152}, total=25610152)",2024-02-13 21:24:05+00:00,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-1k","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')",62320573f8e97eef2a7ea544,microsoft/resnet-50
+microsoft/resnet-101,microsoft,c2bf50f68263a35f102eb5c84ca91fc7352ceff3,2022-07-01 17:33:19+00:00,2022-03-16 15:43:40+00:00,False,False,False,11514,10,transformers,"['transformers', 'pytorch', 'tf', 'resnet', 'image-classification', 'vision', 'dataset:imagenet-1k', 'arxiv:1512.03385', 'license:apache-2.0', 'autotrain_compatible', 'endpoints_compatible', 'region:us']",image-classification,,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-1k",,,"{'architectures': ['ResNetForImageClassification'], 'model_type': 'resnet'}","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')","[RepoSibling(rfilename='.gitattributes', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='README.md', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='preprocessor_config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='pytorch_model.bin', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='tf_model.h5', size=None, blob_id=None, lfs=None)]","['Nuno-Tome/simple_image_classifier', 'morinop/hellominori', 'Nymbo/simple_image_classifier']",,2022-07-01 17:33:19+00:00,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-1k","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')",623205ac3e32d5aa1b7e062a,microsoft/resnet-101
+microsoft/resnet-152,microsoft,189229b1590873cc46c03813abc7d0a7cb8f02b2,2023-06-26 19:49:50+00:00,2022-03-16 14:54:22+00:00,False,False,False,2191,7,transformers,"['transformers', 'pytorch', 'tf', 'safetensors', 'resnet', 'image-classification', 'vision', 'dataset:imagenet-1k', 'arxiv:1512.03385', 'license:apache-2.0', 'autotrain_compatible', 'endpoints_compatible', 'region:us']",image-classification,,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-1k",,,"{'architectures': ['ResNetForImageClassification'], 'model_type': 'resnet'}","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')","[RepoSibling(rfilename='.gitattributes', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='README.md', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='model.safetensors', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='preprocessor_config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='pytorch_model.bin', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='tf_model.h5', size=None, blob_id=None, lfs=None)]","['Nuno-Tome/simple_image_classifier', 'Nymbo/simple_image_classifier']","SafeTensorsInfo(parameters={'F32': 60344232}, total=60344232)",2023-06-26 19:49:50+00:00,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-1k","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')",6231fa1ec924d9a016d80566,microsoft/resnet-152
+apple/mobilevit-small,apple,e841eb5ccfe79086c1a904e671e0652aaad582ab,2022-08-29 07:57:51+00:00,2022-05-30 12:43:23+00:00,False,False,False,185697,37,transformers,"['transformers', 'pytorch', 'tf', 'coreml', 'mobilevit', 'image-classification', 'vision', 'dataset:imagenet-1k', 'arxiv:2110.02178', 'license:other', 'autotrain_compatible', 'endpoints_compatible', 'region:us']",image-classification,,"license: other
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-1k
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg
+  example_title: Tiger
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg
+  example_title: Teapot
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg
+  example_title: Palace","[{'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg', 'example_title': 'Tiger'}, {'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg', 'example_title': 'Teapot'}, {'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg', 'example_title': 'Palace'}]",,"{'architectures': ['MobileViTForImageClassification'], 'model_type': 'mobilevit'}","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')","[RepoSibling(rfilename='.gitattributes', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='MobileViT.mlpackage/Data/com.apple.CoreML/model.mlmodel', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='MobileViT.mlpackage/Data/com.apple.CoreML/weights/weight.bin', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='MobileViT.mlpackage/Manifest.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='README.md', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='preprocessor_config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='pytorch_model.bin', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='tf_model.h5', size=None, blob_id=None, lfs=None)]","['juliensimon/battle_of_image_classifiers', 'SivaResearch/Opensource_imageClassifer_combo']",,2022-08-29 07:57:51+00:00,"license: other
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-1k
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg
+  example_title: Tiger
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg
+  example_title: Teapot
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg
+  example_title: Palace","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')",6294bbebb570e9532913f7c1,apple/mobilevit-small
+apple/mobilevit-x-small,apple,e43eb04478f8e6ad40de2075f003f3d896708102,2022-08-29 07:57:54+00:00,2022-05-30 12:45:19+00:00,False,False,False,481,2,transformers,"['transformers', 'pytorch', 'tf', 'coreml', 'mobilevit', 'image-classification', 'vision', 'dataset:imagenet-1k', 'arxiv:2110.02178', 'license:other', 'autotrain_compatible', 'endpoints_compatible', 'region:us']",image-classification,,"license: other
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-1k
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg
+  example_title: Tiger
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg
+  example_title: Teapot
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg
+  example_title: Palace","[{'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg', 'example_title': 'Tiger'}, {'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg', 'example_title': 'Teapot'}, {'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg', 'example_title': 'Palace'}]",,"{'architectures': ['MobileViTForImageClassification'], 'model_type': 'mobilevit'}","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')","[RepoSibling(rfilename='.DS_Store', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='.gitattributes', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='MobileViT.mlpackage/Data/com.apple.CoreML/model.mlmodel', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='MobileViT.mlpackage/Data/com.apple.CoreML/weights/weight.bin', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='MobileViT.mlpackage/Manifest.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='README.md', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='preprocessor_config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='pytorch_model.bin', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='tf_model.h5', size=None, blob_id=None, lfs=None)]",[],,2022-08-29 07:57:54+00:00,"license: other
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-1k
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg
+  example_title: Tiger
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg
+  example_title: Teapot
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg
+  example_title: Palace","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')",6294bc5ff32e689ab9d883a4,apple/mobilevit-x-small
+apple/mobilevit-xx-small,apple,5d26a9caff1254171068effb211e306f878b31b2,2022-08-29 07:57:57+00:00,2022-05-30 12:46:35+00:00,False,False,False,2120,9,transformers,"['transformers', 'pytorch', 'tf', 'coreml', 'mobilevit', 'image-classification', 'vision', 'dataset:imagenet-1k', 'arxiv:2110.02178', 'license:other', 'autotrain_compatible', 'endpoints_compatible', 'region:us']",image-classification,,"license: other
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-1k
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg
+  example_title: Tiger
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg
+  example_title: Teapot
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg
+  example_title: Palace","[{'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg', 'example_title': 'Tiger'}, {'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg', 'example_title': 'Teapot'}, {'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg', 'example_title': 'Palace'}]",,"{'architectures': ['MobileViTForImageClassification'], 'model_type': 'mobilevit'}","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')","[RepoSibling(rfilename='.DS_Store', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='.gitattributes', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='MobileViT.mlpackage/Data/com.apple.CoreML/model.mlmodel', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='MobileViT.mlpackage/Data/com.apple.CoreML/weights/weight.bin', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='MobileViT.mlpackage/Manifest.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='README.md', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='preprocessor_config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='pytorch_model.bin', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='tf_model.h5', size=None, blob_id=None, lfs=None)]","['c1ndy23/models', 'Jinapa/models', 'kornravee/models', 'KIRASA/models', 'auey/model', 'pangmpn/modle']",,2022-08-29 07:57:57+00:00,"license: other
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-1k
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg
+  example_title: Tiger
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg
+  example_title: Teapot
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg
+  example_title: Palace","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')",6294bcabf32e689ab9d88519,apple/mobilevit-xx-small
+apple/deeplabv3-mobilevit-small,apple,eae87c179cc44719e87db4f6ff23d1d2f0fa2d3b,2022-08-29 07:57:47+00:00,2022-05-30 12:49:24+00:00,False,False,False,837,6,transformers,"['transformers', 'pytorch', 'tf', 'coreml', 'mobilevit', 'vision', 'image-segmentation', 'dataset:pascal-voc', 'arxiv:2110.02178', 'arxiv:1706.05587', 'license:other', 'endpoints_compatible', 'region:us']",image-segmentation,,"license: other
+tags:
+- vision
+- image-segmentation
+datasets:
+- pascal-voc
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/cat-2.jpg
+  example_title: Cat","[{'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/cat-2.jpg', 'example_title': 'Cat'}]",,"{'architectures': ['MobileViTForSemanticSegmentation'], 'model_type': 'mobilevit'}","TransformersInfo(auto_model='MobileViTForSemanticSegmentation', custom_class=None, pipeline_tag=None, processor='AutoImageProcessor')","[RepoSibling(rfilename='.DS_Store', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='.gitattributes', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='MobileViT_DeepLabV3.mlpackage/Data/com.apple.CoreML/model.mlmodel', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='MobileViT_DeepLabV3.mlpackage/Data/com.apple.CoreML/weights/weight.bin', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='MobileViT_DeepLabV3.mlpackage/Manifest.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='README.md', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='preprocessor_config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='pytorch_model.bin', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='tf_model.h5', size=None, blob_id=None, lfs=None)]","['Matthijs/mobilevit-deeplab-demo', 'vktrbr/tiktokApp', 'supermodelteam/deeplabv3-mobilevit-small']",,2022-08-29 07:57:47+00:00,"license: other
+tags:
+- vision
+- image-segmentation
+datasets:
+- pascal-voc
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/cat-2.jpg
+  example_title: Cat","TransformersInfo(auto_model='MobileViTForSemanticSegmentation', custom_class=None, pipeline_tag=None, processor='AutoImageProcessor')",6294bd54f32e689ab9d8885d,apple/deeplabv3-mobilevit-small
+apple/deeplabv3-mobilevit-x-small,apple,3e72805d7bfe3de9d6d6cbd5462c8aa58e51d2ae,2022-08-29 07:57:43+00:00,2022-05-30 12:50:54+00:00,False,False,False,115,2,transformers,"['transformers', 'pytorch', 'tf', 'coreml', 'mobilevit', 'vision', 'image-segmentation', 'dataset:pascal-voc', 'arxiv:2110.02178', 'arxiv:1706.05587', 'license:other', 'endpoints_compatible', 'region:us']",image-segmentation,,"license: other
+tags:
+- vision
+- image-segmentation
+datasets:
+- pascal-voc
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/cat-2.jpg
+  example_title: Cat","[{'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/cat-2.jpg', 'example_title': 'Cat'}]",,"{'architectures': ['MobileViTForSemanticSegmentation'], 'model_type': 'mobilevit'}","TransformersInfo(auto_model='MobileViTForSemanticSegmentation', custom_class=None, pipeline_tag=None, processor='AutoImageProcessor')","[RepoSibling(rfilename='.DS_Store', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='.gitattributes', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='MobileViT_DeepLabV3.mlpackage/Data/com.apple.CoreML/model.mlmodel', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='MobileViT_DeepLabV3.mlpackage/Data/com.apple.CoreML/weights/weight.bin', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='MobileViT_DeepLabV3.mlpackage/Manifest.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='README.md', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='preprocessor_config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='pytorch_model.bin', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='tf_model.h5', size=None, blob_id=None, lfs=None)]",[],,2022-08-29 07:57:43+00:00,"license: other
+tags:
+- vision
+- image-segmentation
+datasets:
+- pascal-voc
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/cat-2.jpg
+  example_title: Cat","TransformersInfo(auto_model='MobileViTForSemanticSegmentation', custom_class=None, pipeline_tag=None, processor='AutoImageProcessor')",6294bdaea1e875b26e937c37,apple/deeplabv3-mobilevit-x-small
+apple/deeplabv3-mobilevit-xx-small,apple,02a6581210d4674e8bb1d322f1260680723b876c,2022-08-29 07:57:26+00:00,2022-05-30 12:52:28+00:00,False,False,False,440,6,transformers,"['transformers', 'pytorch', 'tf', 'coreml', 'mobilevit', 'vision', 'image-segmentation', 'dataset:pascal-voc', 'arxiv:2110.02178', 'arxiv:1706.05587', 'license:other', 'endpoints_compatible', 'region:us']",image-segmentation,,"license: other
+tags:
+- vision
+- image-segmentation
+datasets:
+- pascal-voc
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/cat-2.jpg
+  example_title: Cat","[{'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/cat-2.jpg', 'example_title': 'Cat'}]",,"{'architectures': ['MobileViTForSemanticSegmentation'], 'model_type': 'mobilevit'}","TransformersInfo(auto_model='MobileViTForSemanticSegmentation', custom_class=None, pipeline_tag=None, processor='AutoImageProcessor')","[RepoSibling(rfilename='.DS_Store', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='.gitattributes', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='MobileViT_DeepLabV3.mlpackage/Data/com.apple.CoreML/model.mlmodel', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='MobileViT_DeepLabV3.mlpackage/Data/com.apple.CoreML/weights/weight.bin', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='MobileViT_DeepLabV3.mlpackage/Manifest.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='README.md', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='preprocessor_config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='pytorch_model.bin', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='tf_model.h5', size=None, blob_id=None, lfs=None)]",['mmenendezg/mobilevit-fluorescent-neuronal-cells'],,2022-08-29 07:57:26+00:00,"license: other
+tags:
+- vision
+- image-segmentation
+datasets:
+- pascal-voc
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/cat-2.jpg
+  example_title: Cat","TransformersInfo(auto_model='MobileViTForSemanticSegmentation', custom_class=None, pipeline_tag=None, processor='AutoImageProcessor')",6294be0ced6dba7333761ebc,apple/deeplabv3-mobilevit-xx-small
+facebook/convnext-tiny-224,facebook,6166b7613034066690a621d8bf25ffdf181a34f0,2023-06-13 19:40:31+00:00,2022-03-02 23:29:05+00:00,False,False,False,11849,14,transformers,"['transformers', 'pytorch', 'tf', 'convnext', 'image-classification', 'vision', 'dataset:imagenet-1k', 'arxiv:2201.03545', 'license:apache-2.0', 'autotrain_compatible', 'endpoints_compatible', 'region:us']",image-classification,,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-1k
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg
+  example_title: Tiger
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg
+  example_title: Teapot
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg
+  example_title: Palace","[{'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg', 'example_title': 'Tiger'}, {'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg', 'example_title': 'Teapot'}, {'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg', 'example_title': 'Palace'}]",,"{'architectures': ['ConvNextForImageClassification'], 'model_type': 'convnext'}","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')","[RepoSibling(rfilename='.gitattributes', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='README.md', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='preprocessor_config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='pytorch_model.bin', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='tf_model.h5', size=None, blob_id=None, lfs=None)]","['Nuno-Tome/simple_image_classifier', 'taquynhnga/CNNs-interpretation-visualization', 'jeffhaines/rice-disease-identifier', 'ludusc/latent-space-theories']",,2023-06-13 19:40:31+00:00,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-1k
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg
+  example_title: Tiger
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg
+  example_title: Teapot
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg
+  example_title: Palace","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')",621ffdc136468d709f17adcc,facebook/convnext-tiny-224
+facebook/convnext-small-224,facebook,e0df91dcc78dbc0f56be8fbecff706128aee7c28,2023-11-21 08:38:58+00:00,2022-03-02 23:29:05+00:00,False,False,False,908,5,transformers,"['transformers', 'pytorch', 'tf', 'safetensors', 'convnext', 'image-classification', 'vision', 'dataset:imagenet-1k', 'arxiv:2201.03545', 'license:apache-2.0', 'autotrain_compatible', 'endpoints_compatible', 'region:us']",image-classification,,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-1k
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg
+  example_title: Tiger
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg
+  example_title: Teapot
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg
+  example_title: Palace","[{'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg', 'example_title': 'Tiger'}, {'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg', 'example_title': 'Teapot'}, {'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg', 'example_title': 'Palace'}]",,"{'architectures': ['ConvNextForImageClassification'], 'model_type': 'convnext'}","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')","[RepoSibling(rfilename='.gitattributes', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='README.md', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='model.safetensors', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='preprocessor_config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='pytorch_model.bin', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='tf_model.h5', size=None, blob_id=None, lfs=None)]",[],"SafeTensorsInfo(parameters={'F32': 50223688}, total=50223688)",2023-11-21 08:38:58+00:00,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-1k
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg
+  example_title: Tiger
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg
+  example_title: Teapot
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg
+  example_title: Palace","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')",621ffdc136468d709f17adcb,facebook/convnext-small-224
+facebook/convnext-large-224,facebook,df923d5beb3ec9c0939e094167d0ecb1b7f20e20,2023-06-13 19:39:50+00:00,2022-03-02 23:29:05+00:00,False,False,False,664,25,transformers,"['transformers', 'pytorch', 'tf', 'convnext', 'image-classification', 'vision', 'dataset:imagenet-1k', 'arxiv:2201.03545', 'license:apache-2.0', 'autotrain_compatible', 'endpoints_compatible', 'region:us']",image-classification,,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-1k
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg
+  example_title: Tiger
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg
+  example_title: Teapot
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg
+  example_title: Palace","[{'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg', 'example_title': 'Tiger'}, {'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg', 'example_title': 'Teapot'}, {'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg', 'example_title': 'Palace'}]",,"{'architectures': ['ConvNextForImageClassification'], 'model_type': 'convnext'}","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')","[RepoSibling(rfilename='.gitattributes', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='README.md', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='preprocessor_config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='pytorch_model.bin', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='tf_model.h5', size=None, blob_id=None, lfs=None)]",['Nuno-Tome/simple_image_classifier'],,2023-06-13 19:39:50+00:00,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-1k
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg
+  example_title: Tiger
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg
+  example_title: Teapot
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg
+  example_title: Palace","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')",621ffdc136468d709f17adc8,facebook/convnext-large-224
+facebook/convnext-large-224-22k,facebook,4d5c8052c18a254f587ef463b5199d4bfd198a38,2023-09-05 15:17:34+00:00,2022-03-02 23:29:05+00:00,False,False,False,338,0,transformers,"['transformers', 'pytorch', 'tf', 'safetensors', 'convnext', 'image-classification', 'vision', 'dataset:imagenet-21k', 'arxiv:2201.03545', 'license:apache-2.0', 'autotrain_compatible', 'endpoints_compatible', 'region:us']",image-classification,,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-21k
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg
+  example_title: Tiger
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg
+  example_title: Teapot
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg
+  example_title: Palace","[{'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg', 'example_title': 'Tiger'}, {'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg', 'example_title': 'Teapot'}, {'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg', 'example_title': 'Palace'}]",,"{'architectures': ['ConvNextForImageClassification'], 'model_type': 'convnext'}","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')","[RepoSibling(rfilename='.gitattributes', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='README.md', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='model.safetensors', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='preprocessor_config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='pytorch_model.bin', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='tf_model.h5', size=None, blob_id=None, lfs=None)]",[],"SafeTensorsInfo(parameters={'F32': 229799953}, total=229799953)",2023-09-05 15:17:34+00:00,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-21k
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg
+  example_title: Tiger
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg
+  example_title: Teapot
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg
+  example_title: Palace","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')",621ffdc136468d709f17adc7,facebook/convnext-large-224-22k
+facebook/convnext-large-224-22k-1k,facebook,971d6b49d445e438c7cd8e14dab35a600f778757,2023-11-21 08:39:30+00:00,2022-03-02 23:29:05+00:00,False,False,False,3234,2,transformers,"['transformers', 'pytorch', 'tf', 'convnext', 'image-classification', 'vision', 'dataset:imagenet-21k', 'arxiv:2201.03545', 'license:apache-2.0', 'autotrain_compatible', 'endpoints_compatible', 'region:us']",image-classification,,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-21k
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg
+  example_title: Tiger
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg
+  example_title: Teapot
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg
+  example_title: Palace","[{'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg', 'example_title': 'Tiger'}, {'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg', 'example_title': 'Teapot'}, {'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg', 'example_title': 'Palace'}]",,"{'architectures': ['ConvNextForImageClassification'], 'model_type': 'convnext'}","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')","[RepoSibling(rfilename='.gitattributes', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='README.md', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='preprocessor_config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='pytorch_model.bin', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='tf_model.h5', size=None, blob_id=None, lfs=None)]",[],,2023-11-21 08:39:30+00:00,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-21k
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg
+  example_title: Tiger
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg
+  example_title: Teapot
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg
+  example_title: Palace","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')",621ffdc136468d709f17adc6,facebook/convnext-large-224-22k-1k
+facebook/convnext-xlarge-224-22k,facebook,fc6b9974e8ce68f2880a5ff3589a90556e34e332,2022-02-26 12:20:17+00:00,2022-03-02 23:29:05+00:00,False,False,False,460,1,transformers,"['transformers', 'pytorch', 'tf', 'convnext', 'image-classification', 'vision', 'dataset:imagenet-21k', 'arxiv:2201.03545', 'license:apache-2.0', 'autotrain_compatible', 'endpoints_compatible', 'region:us']",image-classification,,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-21k
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg
+  example_title: Tiger
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg
+  example_title: Teapot
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg
+  example_title: Palace","[{'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg', 'example_title': 'Tiger'}, {'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg', 'example_title': 'Teapot'}, {'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg', 'example_title': 'Palace'}]",,"{'architectures': ['ConvNextForImageClassification'], 'model_type': 'convnext'}","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')","[RepoSibling(rfilename='.gitattributes', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='README.md', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='preprocessor_config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='pytorch_model.bin', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='tf_model.h5', size=None, blob_id=None, lfs=None)]",[],,2022-02-26 12:20:17+00:00,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-21k
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg
+  example_title: Tiger
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg
+  example_title: Teapot
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg
+  example_title: Palace","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')",621ffdc136468d709f17adce,facebook/convnext-xlarge-224-22k
+facebook/convnext-xlarge-224-22k-1k,facebook,cc348566f24077249a0bc049a373a56b669ff300,2022-06-27 08:55:36+00:00,2022-03-02 23:29:05+00:00,False,False,False,326,2,transformers,"['transformers', 'pytorch', 'tf', 'convnext', 'image-classification', 'vision', 'dataset:imagenet-21k', 'dataset:imagenet-1k', 'arxiv:2201.03545', 'license:apache-2.0', 'autotrain_compatible', 'endpoints_compatible', 'region:us']",image-classification,,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-21k
+- imagenet-1k
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg
+  example_title: Tiger
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg
+  example_title: Teapot
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg
+  example_title: Palace","[{'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg', 'example_title': 'Tiger'}, {'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg', 'example_title': 'Teapot'}, {'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg', 'example_title': 'Palace'}]",,"{'architectures': ['ConvNextForImageClassification'], 'model_type': 'convnext'}","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')","[RepoSibling(rfilename='.gitattributes', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='README.md', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='preprocessor_config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='pytorch_model.bin', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='tf_model.h5', size=None, blob_id=None, lfs=None)]",[],,2022-06-27 08:55:36+00:00,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-21k
+- imagenet-1k
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg
+  example_title: Tiger
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg
+  example_title: Teapot
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg
+  example_title: Palace","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')",621ffdc136468d709f17adcd,facebook/convnext-xlarge-224-22k-1k
+facebook/convnextv2-atto-1k-224,facebook,f9d94de8d49495efdb1acc25f90b233257a3d984,2023-09-04 19:39:36+00:00,2023-02-17 13:03:54+00:00,False,False,False,12770,0,transformers,"['transformers', 'pytorch', 'tf', 'convnextv2', 'image-classification', 'vision', 'dataset:imagenet-1k', 'arxiv:2301.00808', 'license:apache-2.0', 'autotrain_compatible', 'endpoints_compatible', 'region:us']",image-classification,,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-1k
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg
+  example_title: Tiger
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg
+  example_title: Teapot
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg
+  example_title: Palace","[{'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg', 'example_title': 'Tiger'}, {'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg', 'example_title': 'Teapot'}, {'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg', 'example_title': 'Palace'}]",,"{'architectures': ['ConvNextV2ForImageClassification'], 'model_type': 'convnextv2'}","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')","[RepoSibling(rfilename='.gitattributes', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='README.md', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='preprocessor_config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='pytorch_model.bin', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='tf_model.h5', size=None, blob_id=None, lfs=None)]",[],,2023-09-04 19:39:36+00:00,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-1k
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg
+  example_title: Tiger
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg
+  example_title: Teapot
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg
+  example_title: Palace","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')",63ef7b3a6d27eff92b258159,facebook/convnextv2-atto-1k-224
+facebook/convnextv2-pico-1k-224,facebook,b8ff25a23bc3c3ce99314ce23d96f2fc1be7bd72,2023-09-04 19:38:57+00:00,2023-02-17 13:54:20+00:00,False,False,False,432,0,transformers,"['transformers', 'pytorch', 'tf', 'convnextv2', 'image-classification', 'vision', 'dataset:imagenet-1k', 'arxiv:2301.00808', 'license:apache-2.0', 'autotrain_compatible', 'endpoints_compatible', 'region:us']",image-classification,,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-1k
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg
+  example_title: Tiger
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg
+  example_title: Teapot
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg
+  example_title: Palace","[{'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg', 'example_title': 'Tiger'}, {'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg', 'example_title': 'Teapot'}, {'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg', 'example_title': 'Palace'}]",,"{'architectures': ['ConvNextV2ForImageClassification'], 'model_type': 'convnextv2'}","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')","[RepoSibling(rfilename='.gitattributes', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='README.md', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='preprocessor_config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='pytorch_model.bin', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='tf_model.h5', size=None, blob_id=None, lfs=None)]",[],,2023-09-04 19:38:57+00:00,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-1k
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg
+  example_title: Tiger
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg
+  example_title: Teapot
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg
+  example_title: Palace","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')",63ef870c02c246819b9c03a9,facebook/convnextv2-pico-1k-224
+facebook/convnextv2-nano-1k-224,facebook,29f0ed1fae4af4722ef743b7926784b06e6329a9,2023-09-26 17:19:45+00:00,2023-02-17 13:56:55+00:00,False,False,False,966,0,transformers,"['transformers', 'pytorch', 'tf', 'convnextv2', 'image-classification', 'vision', 'dataset:imagenet-1k', 'arxiv:2301.00808', 'license:apache-2.0', 'autotrain_compatible', 'endpoints_compatible', 'region:us']",image-classification,,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-1k
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg
+  example_title: Tiger
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg
+  example_title: Teapot
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg
+  example_title: Palace","[{'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg', 'example_title': 'Tiger'}, {'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg', 'example_title': 'Teapot'}, {'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg', 'example_title': 'Palace'}]",,"{'architectures': ['ConvNextV2ForImageClassification'], 'model_type': 'convnextv2'}","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')","[RepoSibling(rfilename='.gitattributes', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='README.md', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='preprocessor_config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='pytorch_model.bin', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='tf_model.h5', size=None, blob_id=None, lfs=None)]",[],,2023-09-26 17:19:45+00:00,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-1k
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg
+  example_title: Tiger
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg
+  example_title: Teapot
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg
+  example_title: Palace","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')",63ef87a76d27eff92b2667b7,facebook/convnextv2-nano-1k-224
+facebook/convnextv2-tiny-1k-224,facebook,3f533b966e3fa5362839d05a5955749c502c24f8,2023-11-28 09:42:05+00:00,2023-02-17 14:03:53+00:00,False,False,False,55047,0,transformers,"['transformers', 'pytorch', 'tf', 'safetensors', 'convnextv2', 'image-classification', 'vision', 'dataset:imagenet-1k', 'arxiv:2301.00808', 'license:apache-2.0', 'autotrain_compatible', 'endpoints_compatible', 'region:us']",image-classification,,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-1k
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg
+  example_title: Tiger
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg
+  example_title: Teapot
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg
+  example_title: Palace","[{'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg', 'example_title': 'Tiger'}, {'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg', 'example_title': 'Teapot'}, {'src': 'https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg', 'example_title': 'Palace'}]",,"{'architectures': ['ConvNextV2ForImageClassification'], 'model_type': 'convnextv2'}","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')","[RepoSibling(rfilename='.gitattributes', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='README.md', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='model.safetensors', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='preprocessor_config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='pytorch_model.bin', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='tf_model.h5', size=None, blob_id=None, lfs=None)]",[],"SafeTensorsInfo(parameters={'F32': 28635496}, total=28635496)",2023-11-28 09:42:05+00:00,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-1k
+widget:
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg
+  example_title: Tiger
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/teapot.jpg
+  example_title: Teapot
+- src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg
+  example_title: Palace","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')",63ef89498da865b7fce06e33,facebook/convnextv2-tiny-1k-224
+littlebird13/resnet-50-web,littlebird13,5b168071137806dcfbe2d7c199ba6aa23b7c0570,2023-12-15 02:56:59+00:00,2023-12-15 02:55:52+00:00,False,False,False,3,0,transformers,"['transformers', 'pytorch', 'tf', 'jax', 'resnet', 'image-classification', 'vision', 'dataset:imagenet-1k', 'arxiv:1512.03385', 'license:apache-2.0', 'autotrain_compatible', 'endpoints_compatible', 'region:us']",image-classification,,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-1k",,,"{'architectures': ['ResNetForImageClassification'], 'model_type': 'resnet'}","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')","[RepoSibling(rfilename='.gitattributes', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='README.md', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='flax_model.msgpack', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='preprocessor_config.json', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='pytorch_model.bin', size=None, blob_id=None, lfs=None), RepoSibling(rfilename='tf_model.h5', size=None, blob_id=None, lfs=None)]",[],,2023-12-15 02:56:59+00:00,"license: apache-2.0
+tags:
+- vision
+- image-classification
+datasets:
+- imagenet-1k","TransformersInfo(auto_model='AutoModelForImageClassification', custom_class=None, pipeline_tag='image-classification', processor='AutoImageProcessor')",657bc03812e4dfc7a935bdfb,littlebird13/resnet-50-web

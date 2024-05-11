@@ -3,4 +3,5 @@ __pycache__/
 *logs/
 store/
 modelrepo/
+cards/
 todo.csv
