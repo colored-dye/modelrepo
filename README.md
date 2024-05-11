@@ -17,7 +17,7 @@ Total download size: 4851.775 GiB.
 ```bash
 conda create -n modelrepo python==3.10 -y
 conda activate modelrepo
-pip install modelstore transformers torch tensorflow tf-keras scikit-learn tqdm tensorflow_probability
+pip install modelstore==0.0.80 transformers torch tensorflow tf-keras scikit-learn tqdm tensorflow_probability
 ```
 
 ## Venv
@@ -26,14 +26,14 @@ Bash:
 ```bash
 python -m venv modelrepo
 source modelrepo/bin/activate
-pip install modelstore transformers torch tensorflow tf-keras scikit-learn tqdm tensorflow_probability
+pip install modelstore==0.0.80 transformers torch tensorflow tf-keras scikit-learn tqdm tensorflow_probability
 ```
 
 Powershell:
 ```powershell
 python -m venv modelrepo
 modelrepo\Scripts\activate.ps1
-pip install modelstore transformers torch tensorflow tf-keras scikit-learn tqdm tensorflow_probability
+pip install modelstore==0.0.80 transformers torch tensorflow tf-keras scikit-learn tqdm tensorflow_probability
 ```
 
 # How to run
