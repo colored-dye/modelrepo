@@ -23,26 +23,6 @@ header = ['id', 'author', 'sha', 'last_modified', 'created_at', 'private', 'gate
           'card_data', 'widget_data', 'model_index', 'config', 'transformers_info', 'siblings', 'spaces', 'safetensors', 'lastModified', 'cardData', 'transformersInfo', '_id', 'modelId', 'download_size']
 
 
-def hfd_download(repo_id, download_dir, n_threads, hf_username, hf_token, log_fp):
-    print(f"Downloading {repo_id} to {download_dir}.")
-    start = time.time()
-    ret = subprocess.run(["./hfd.sh", repo_id, 
-                    "--tool", "aria2c",
-                    "-x", str(n_threads),
-                    "--hf_username", hf_username,
-                    "--hf_token", hf_token,
-                    "--local-dir", download_dir],
-                    stdout=log_fp,
-                    stderr=log_fp)
-    end = time.time()
-    print(f"Time used: {(end-start)//60} min {int(end-start)%60} s")
-
-    if ret.returncode != 0:
-        raise ValueError(f"Process failed: hfd.sh {repo_id}")
-    else:
-        print(f"Download complete.")
-
-
 def hfhub_download(model_info, download_dir, hf_token, max_connections):
     repo_id = model_info[0]
     print(f"Downloading {repo_id} to {download_dir}.")
@@ -163,7 +143,6 @@ def model_exists(root_dir: str,
 def repo_download_and_upload(model_info: list,
                 root_dir: str,
                 cache_dir: str,
-                hf_username: str,
                 hf_token: str,
                 max_connections: int,):
     repo_id = model_info[0]
@@ -179,16 +158,19 @@ def repo_download_and_upload(model_info: list,
         basename = repo_id
         download_dir = os.path.join(cache_dir, repo_id)
     
-    # with open(log_file.encode('unicode-escape'), "w", encoding='utf-8') as log_fp:
     os.makedirs(download_dir, exist_ok=True)
-    # hfd_download(repo_id, download_dir, max_connections, hf_username, hf_token, log_fp)
+
+    # Download to cache
     hfhub_download(model_info, download_dir, hf_token, max_connections)
     
+    # Upload to model repository.
+    # A model might support multiple backends.
     backends = get_backends_from_storage(download_dir)
     print(f"Backends: {backends}")
     for backend in backends:
         upload_from_cache(repo_id, basename, download_dir, root_dir, backend)
-    
+
+    # Remove download cache.
     shutil.rmtree(download_dir)
 
     return
@@ -202,7 +184,8 @@ def test_load(root_dir: str,
 
     try:
         model_id = model_store.list_versions(repo_id)[0]
-        model_pack = utils.load(model_store, repo_id, model_id, backend)
+        # model_pack = utils.load(model_store, repo_id, model_id, backend)
+        model_pack = model_store.load(repo_id, model_id)
 
         for i in model_pack:
             print(i.__class__)
@@ -219,7 +202,6 @@ if __name__ == "__main__":
     parser.add_argument("--root_dir", required=True)
     parser.add_argument("--csv_file", required=True)
     parser.add_argument("--cache_dir", required=True)
-    parser.add_argument("--hf_username", required=True)
     parser.add_argument("--hf_token", required=True)
     parser.add_argument("--max_connections", type=int, required=True)
     parser.add_argument("--backend", choices=["torch", "tf", "sklearn"])
@@ -227,12 +209,11 @@ if __name__ == "__main__":
     
     with open(args.csv_file, "r", encoding='utf-8') as fp:
         reader = csv.reader(fp, lineterminator='\n')
-        next(reader)
+        next(reader)    # Skip header row.
         for row in reader:
             repo_download_and_upload(root_dir=args.root_dir,
                                     model_info=row,
                                     cache_dir=args.cache_dir,
-                                    hf_username=args.hf_username,
                                     hf_token=args.hf_token,
                                     max_connections=args.max_connections)
             

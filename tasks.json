@@ -1,0 +1,46 @@
+{
+    "nlp": {
+        "text-generation": 30,
+        "question-answering": 30,
+        "text-classification": 30,
+        "translation": 30,
+        "summarization": 30,
+        "text2text-generation": 20,
+        "feature-extraction": 20,
+        "zero-shot-classification": 20,
+        "token-classification": 10,
+        "fill-mask": 10,
+        "sentence-similarity": 10,
+        "table-question-answering": 10
+    },
+    "vision": {
+        "image-classification": 10,
+        "image-to-text": 10,
+        "object-detection": 10,
+        "image-segmentation": 10,
+        "unconditional-image-generation": 10,
+        "text-to-image": 10,
+        "image-to-image": 10,
+        "zero-shot-image-classification": 10,
+        "mask-generation": 10,
+        "zero-shot-object-detection": 10,
+        "image-feature-extraction": 10,
+        "depth-estimation": 5,
+        "image-to-3d": 3,
+        "text-to-video": 1,
+        "text-to-3d": 0
+    },
+    "audio": {
+        "text-to-speech": 10,
+        "text-to-audio": 10,
+        "automatic-speech-recognition": 10,
+        "audio-classification": 10,
+        "audio-to-audio": 8,
+        "voice-activity-detection": 1
+    },
+    "multi-modal": {
+        "visual-question-answering": 10,
+        "document-question-answering": 10,
+        "image-text-to-text": 3
+    }
+}
